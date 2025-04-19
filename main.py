@@ -30,7 +30,7 @@ openai_client = OpenAI(api_key=OPENAI_KEY)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # frontend
+    allow_origins=["http://localhost:5173", "https://paraller.vercel.app/"],  # frontend
     allow_credentials=True,
     allow_methods=["*"],  # include OPTIONS
     allow_headers=["*"],
