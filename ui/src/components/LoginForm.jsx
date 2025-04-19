@@ -21,7 +21,7 @@ function LoginForm({ setLoggedIn }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const url = mode === 'register' ? 'http://localhost:8000/register' : 'http://localhost:8000/login';
+    const url = mode === 'register' ? 'https://paraller.onrender.com/register' : 'https://paraller.onrender.com/login';
 
     try {
       const res = await fetch(url, {
